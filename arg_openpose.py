@@ -26,10 +26,10 @@ model_name = 'control_v11p_sd15_openpose'
 any_model_name = 'control_any3_openpose'
 model = create_model(f'./models/{model_name}.yaml').cpu()
 model.load_state_dict(
-    load_state_dict('/Users/liuyanjun/workspace/youtube/opencv/ControlNet/models/v1-5-pruned.ckpt', location='cpu'),
+    load_state_dict('/mnt/sql/oracle/myanime/models/v1-5-pruned.ckpt', location='cpu'),
     strict=False)
 model.load_state_dict(
-    load_state_dict(f'/Users/liuyanjun/workspace/youtube/opencv/ControlNet/models/{any_model_name}.pth',
+    load_state_dict(f'/mnt/sql/oracle/myanime/models/{any_model_name}.pth',
                     location='cpu'), strict=False)
 model = model.cpu()
 ddim_sampler = DDIMSampler(model)
