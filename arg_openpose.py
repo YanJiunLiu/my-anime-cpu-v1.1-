@@ -132,7 +132,7 @@ def parse_args():
     parser.add_argument('--num_samples', type=int, default=1)
     parser.add_argument('--image_resolution', type=int, default=512)
     parser.add_argument('--detect_resolution', type=int, default=512)
-    parser.add_argument('--ddim_steps', type=int, default=20)
+    parser.add_argument('--ddim_steps', type=int, default=5)
     parser.add_argument('--guess_mode', type=bool, default=False)
     parser.add_argument('--strength', type=int, default=1)
     parser.add_argument('--scale', type=int, default=9)
