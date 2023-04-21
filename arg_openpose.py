@@ -22,7 +22,7 @@ from cldm.ddim_hacked import DDIMSampler
 from PIL import Image
 import argparse
 
-os.environ['CUDA_VISIBLE_DEVICES'] = 0
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 preprocessor = None
 
