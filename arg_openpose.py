@@ -1,3 +1,5 @@
+import os
+
 from share import *
 from cldm.hack import hack_everything
 
@@ -19,6 +21,8 @@ from cldm.model import create_model, load_state_dict
 from cldm.ddim_hacked import DDIMSampler
 from PIL import Image
 import argparse
+
+os.environ['CUDA_VISIBLE_DEVICES'] = 0
 
 preprocessor = None
 
